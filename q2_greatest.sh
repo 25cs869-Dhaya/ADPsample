@@ -1,6 +1,4 @@
-#!/bin/bash
 
-# Script to find the greatest of 2 numbers
 
 echo "Enter first number:"
 read num1
