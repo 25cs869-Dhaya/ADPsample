@@ -1,84 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <style>
-    body { background: #fff; font-size: 0.875rem; }
-    .sidebar { border-right: 1px solid #dee2e6; min-height: calc(100vh - 56px); }
-    .sidebar .nav-link { color: #adb5bd; padding: 0.35rem 0; }
-    .sidebar .nav-link.active, .sidebar .nav-link:hover { color: #212529; }
-    .stat-col { border-right: 1px solid #dee2e6; }
-    .stat-col:last-child { border-right: none; }
-    .stat-value { font-size: 1.5rem; font-weight: 600; }
-    .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #adb5bd; }
-  </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.box{
+  border:3px solid #2e86de;
+  padding:20px;
+}
+.sidebar{
+  border-right:3px solid #2e86de;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <nav class="navbar border-bottom px-4" style="height:56px;">
-    <span class="navbar-brand fw-semibold" style="font-size:0.85rem; letter-spacing:0.1em;">PORTAL</span>
-    <div class="d-flex gap-4">
-      <a href="#" class="text-secondary text-decoration-none" style="font-size:0.78rem;">Dashboard</a>
-      <a href="#" class="text-secondary text-decoration-none" style="font-size:0.78rem;">Projects</a>
-      <a href="#" class="text-secondary text-decoration-none" style="font-size:0.78rem;">Settings</a>
-    </div>
-  </nav>
+<div class="container mt-3">
 
-  <!-- MAIN GRID -->
-  <div class="container-fluid px-0">
-    <div class="row g-0">
-
-      <!-- SIDEBAR -->
-      <aside class="col-2 sidebar p-4">
-        <p class="label mb-3">Menu</p>
-        <ul class="nav flex-column gap-1">
-          <li><a href="#" class="nav-link active ps-0">Dashboard</a></li>
-          <li><a href="#" class="nav-link ps-0">Analytics</a></li>
-          <li><a href="#" class="nav-link ps-0">Projects</a></li>
-         
-        </ul>
-      </aside>
-
-      <!-- CONTENT -->
-      <main class="col-10">
-
-        <!-- HERO -->
-        <div class="px-4 py-4 border-bottom">
-          <h1 class="h6 fw-semibold mb-1">Good morning, Alex.</h1>
-          <p class="text-secondary mb-0">Tuesday, 31 March 2026 — 3 tasks pending.</p>
-        </div>
-
-        <!-- STAT CARDS -->
-        <div class="row g-0">
-          <div class="col stat-col p-4">
-            <p class="label mb-2">Revenue</p>
-            <div class="stat-value">₹84.2k</div>
-            <p class="text-secondary mb-0 mt-1" style="font-size:0.78rem;">This month</p>
-          </div>
-          <div class="col stat-col p-4">
-            <p class="label mb-2">Tasks</p>
-            <div class="stat-value">27/40</div>
-            <p class="text-secondary mb-0 mt-1" style="font-size:0.78rem;">Completed</p>
-          </div>
-          <div class="col stat-col p-4">
-            <p class="label mb-2">Users</p>
-            <div class="stat-value">1,342</div>
-            <p class="text-secondary mb-0 mt-1" style="font-size:0.78rem;">Active now</p>
-          </div>
-        </div>
-
-      </main>
+  <!-- Header -->
+  <div class="row">
+    <div class="col-12 box text-center">
+      <h2>My Header</h2>
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="border-top px-4 d-flex align-items-center" style="height:36px; font-size:0.68rem; color:#adb5bd; letter-spacing:0.06em;">
-    Dhaya's layout
-  </footer>
+  <!-- Content -->
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-3 box sidebar">
+      <a href="#">Link1</a><br>
+      <a href="#">Link 2</a><br>
+      <a href="#">Link 3</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-9 box">
+      <h4>Lorem Ipsum</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ridiculus sit nisl laoreet facilisis aliquet.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="row">
+    <div class="col-12 box text-center">
+      Footer
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>
